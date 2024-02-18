@@ -18,7 +18,7 @@ body {
     height: 100vh;
     width: 100vw;
     color: var(--text-color);
-    background: url(../pictures/bg-log-in.png);
+    background: URL("../pictures/bg-log-in.png");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -29,7 +29,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background: url(../pictures/bg-log-in.png);
+    background: URL("../pictures/bg-log-in.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
