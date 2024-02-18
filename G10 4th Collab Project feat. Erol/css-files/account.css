@@ -11,6 +11,10 @@ body {
     background: #F0F0F0;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 #options {
     z-index: 1;
     position: fixed;
