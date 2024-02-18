@@ -17,7 +17,7 @@
 
 body {
     font-family: var(--content-font); 
-    background-color: var(--nav-links-color);   
+    background: var(--nav-links-color);   
     font-size: var(--text-size);
 }
 
