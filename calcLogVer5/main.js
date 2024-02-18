@@ -34,6 +34,7 @@ function log(base, argument) {
   if (base % 1) {
     // base is decimal
     const answer = log(10, argument) / log(10, base);
+    // return utils.roundDecimals(answer);
     return answer;
   } else if (base === 1 && argument !== 1) {
     // base is 1 and arg is not 1
