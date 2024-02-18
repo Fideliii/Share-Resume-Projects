@@ -9,6 +9,11 @@ section {
     padding: 3em;
     overflow-y: scroll;
 }
+
+section::-webkit-scrollbar {
+    display: none;
+}
+
 section h1 {
     text-transform: uppercase;
 }
