@@ -21,6 +21,10 @@ body {
     font-size: var(--text-size);
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 body button {
     cursor: pointer;
     border: none;
