@@ -26,7 +26,7 @@ function calcLog(base, argument) {
   if (base % 1) {
     // base is decimal
     const answer = calcLog(10, argument) / calcLog(10, base);
-    return answer;
+    return roundDecimals(answer);
   } else if (base === 1 && argument !== 1) {
     // base is 1 & arg is not 1
     if (argument > 1) return Infinity;
