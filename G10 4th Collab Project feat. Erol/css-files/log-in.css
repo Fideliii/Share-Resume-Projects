@@ -17,7 +17,7 @@ body {
     font-family: var(--content-font);
     height: calc(100vh - 8em);
     color: var(--text-color);
-    background: url(/pictures/bg-log-in.png);
+    background: url(../pictures/bg-log-in.png);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
