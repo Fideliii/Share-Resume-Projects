@@ -1,0 +1,160 @@
+:root {
+    --bg-color: #F0F0F0;
+    --nav-links-color: #27BACE;
+    --dark-bg-color: rgb(77, 77, 77);
+    --text-color: black;
+    --invert-text-color: white;
+    --text-size: 18px;
+}
+
+body {
+    background: #F0F0F0;
+}
+
+#options {
+    z-index: 1;
+    position: fixed;
+    width: 35%;
+    height: 100%;
+    background: var(--bg-color);
+    box-shadow: 4px 0px 10px rgb(71, 71, 71);
+}
+
+#profile {
+    width: 100%;
+    height: 30%;
+}
+
+#profile #img {
+    position: relative;
+    border-radius: 100%;
+    width: 6em;
+    height: 6em;
+    margin-top: 6vh; 
+    margin-left: 35%;
+}
+
+#profile #edit-img {
+    position: relative;
+    background: var(--dark-bg-color);
+    overflow: hidden;
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+    left: 55%;
+    bottom: 15%;
+}
+#profile #edit-img img {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+}
+#profile #edit-img input {
+    opacity: 0;
+    font-size: 999px;
+    cursor: pointer;
+}
+
+#profile h1 {
+    text-align: center;
+}
+
+#account-options {
+    text-align: center;
+    height: 70%;
+}
+
+#account-options ul {
+    list-style: none;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#account-options li {
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#account-options a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#inputs {
+    position: fixed;
+    width: 51%;
+    height: 70%;
+    overflow-y: scroll;
+    right: 7%;
+    top: 15%;
+}
+
+.input-area {
+    position: relative;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.queries {
+    padding: 10px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 350ms ease-in;
+}
+.queries input {
+    width: 100%;
+    height: 5vh;
+}
+
+.observed {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.flex-queries {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+#save {
+    position: absolute;
+    z-index: 1;
+    bottom: 5vh;
+    right: 7%;
+    width: 51%;
+    height: 10%;
+    background: var(--dark-bg-color);
+    color: var(--invert-text-color);
+    transition: 200ms ease-in;
+}
+
+#save::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--nav-links-color);
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 200ms ease-in;
+}
+
+#save:hover::after {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+#save:hover {
+    color: var(--text-color);
+}

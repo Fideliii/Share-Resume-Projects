@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-object" id="bg-obj-up"></div>
+  <section>
+    <h1>Logarithm Calculator</h1>
+    <div class="container">
+      <ul>
+        <li>Equation: <span>log<sub>base</sub> argument</span></li>
+        <li>Method: bisection search algorithm</li>
+        <li>Inputs:
+          <ul>
+            <li>base > negative</li>
+            <li>argument > 0</li>
+            <li>"e" for natural log (In x or log<sub>e</sub> x)</li>
+          </ul>
+        </li>
+        <li>Output: compare answers (websites)<br>
+          <a href='https://www.rapidtables.com/calc/math/Log_Calculator.html' target='_blank'>common logarithm</a><br>
+          <a href='https://www.rapidtables.com/calc/math/Ln_Calc.html' target='_blank'>natural logarithm</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container" id="input-div">
+      <p>
+        log <sub><input id="base" placeholder="10"></sub> <input id="argument" placeholder="1">
+      </p>
+      <button id="calcBtn" onclick="calculate()">Calculate</button>
+      <p id="answer">
+
+      </p>
+    </div>
+  </section>
+  <div class="bg-object" id="bg-obj-low"></div>
+
+  <script src="script.js"></script>
+  <script src="calcLog.js"></script>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="teal" defer></script>
+</body>
+
+</html>

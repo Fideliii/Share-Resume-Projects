@@ -1,0 +1,102 @@
+:root {
+    --about-section: #27BACE;
+    --creators-section: #F0F0F0;
+    --creator-content: rgb(77, 77, 77);
+    --light-text: white;
+}
+
+section {
+    padding: 3em;
+    overflow-y: scroll;
+}
+section h1 {
+    text-transform: uppercase;
+}
+
+section#about {
+    padding: 0em;
+    background: var(--about-section);
+}
+
+section#creators {
+    background: var(--creators-section);
+}
+
+section#socials {
+    background: var(--creator-content);
+    color: var(--light-text);
+}
+
+.content {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 350ms ease-in;
+    padding-top: 50px;
+}
+.content p {
+    margin-bottom: 20px;
+}
+
+.observed {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#socials-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+#socials-img img {
+    width: 4.5em;
+    height: 4.5em;
+}
+
+.contributor {
+    height: 40vh;
+    margin-bottom: 2em;
+}
+
+.content-flex {
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 0%;
+    padding: 20px;
+}
+
+.flex-right {
+    right: 0%;
+    padding-bottom: 50px;
+}
+.flex-left {
+    left: 0%;
+}
+
+.content-flex .head {
+    text-align: center;
+}
+
+.contributor .image {
+    width: min(100%, 300px);
+    height: min(100%, 300px);
+    border-radius: 100%;
+}
+.float-left {
+    float: left;    
+}
+.float-right {
+    float: right;
+}

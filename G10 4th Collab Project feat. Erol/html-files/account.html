@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>account</title>
+    <link href="../css-files/index.css" rel="stylesheet" type="text/css">
+    <link href="../css-files/account.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <h1>T&E™</h1>
+
+        <div id="navLinks">
+            <a class="links" href="about-us.html" style="--delay: 3;">about us</a> <br>
+            <a class="links" href="products.html" style="--delay: 2;">products</a> <br>
+            <a class="links" href="account.html" style="--delay: 1;">account</a>
+        </div>
+
+        <button id="menu-btn" type="button" onclick="">
+            <img src="../pictures/icons/menu copy.png">
+        </button>
+    </div>
+
+    <section id="options">
+        <div id="profile">
+            <img id="img" src="../pictures/fidel-pic-creators.png">
+            <div id="edit-img">
+                <img src="../pictures/icons/camera-copy.png">
+                <input type="file">
+            </div>
+            <h1>zetsuya</h1>
+        </div>
+
+        <div id="account-options">
+            <ul>
+                <li><a href="#edit-profile">edit profile</a></li>
+                <li><a href="#payment-info">payment information</a></li>
+                <li><a href="../log-in.html">log out</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="inputs">
+        <section class="input-area" id="edit-profile">
+            <div class="queries">
+                <label>Username</label> <br>
+                <input type="text" value="zetsuya">
+            </div>
+    
+            <div class="queries">
+                <label>Password</label> <br>
+                <input type="password" value="Fidelacordon3">
+            </div>
+        </section>
+    
+        <section class="input-area">
+            <div class="queries">
+                <h1>Personal Information</h1>
+                <p>
+                    Provide your personal information for easy access in other devices. This will not be part of your public profile.
+                </p>
+            </div>
+    
+            <div class="flex-queries flex-column">
+                <div class="queries">
+                    <label>Email</label> <br>
+                    <input type="text" value="z3tsuya@gmail.com">
+                </div>
+        
+                <div class="queries">
+                    <label>Phone Number</label> <br>
+                    <input type="text" value="+971">
+                </div>
+        
+                <div class="queries">
+                    <label>Gender</label> <br>
+                    <input list="gender">
+                        <datalist id="gender">
+                            <option value="Male">
+                            <option value="Female">
+                            <option value="Others">
+                        </datalist>
+                </div>
+            </div>
+        </section>
+    
+        <section class="input-area" id="payment-info">
+            <div class="queries">
+                <h1>Payment Information</h1>
+            </div>
+            <div class="flex-queries">
+                <div class="queries">
+                    <label>First Name</label> <br>
+                    <input type="text">
+                </div>
+    
+                <div class="queries">
+                    <label>Last Name</label> <br>
+                    <input type="text">
+                </div>
+            </div>
+    
+            <div class="queries" id="card-num">
+                <div></div><!--payment option1-->
+                <div></div><!--payment option2-->
+    
+                <label>Credit Card Number</label> <br>
+                <input type="text">
+            </div>
+    
+            <div class="flex-queries">
+                <div class="queries">
+                    <label>Expiration Date</label> <br>
+                    <input type="date" min="2021-01-01">
+                </div>
+                <div class="queries">
+                    <label>CVV</label> <br>
+                    <input type="password" pattern="[0-9]{3,4}">
+                </div>
+            </div>
+    
+            <div class="flex-queries">
+                <div class="queries">
+                    <label>Country</label> <br>
+                    <input type="text" value="United Arab Emirates">
+                </div>
+    
+                <div class="queries">
+                    <label>Emirate</label><br>
+                    <input list="emirates">
+                        <datalist id="emirates">
+                            <option value="Abu Dhabi">
+                            <option value="Dubai">
+                            <option value="Sharjah">
+                            <option value="Ajman">
+                            <option value="Umm Al Quwain">
+                            <option value="Ras Al Khaimah">
+                            <option value="Fujairah">
+                        </datalist>
+                </div>
+            </div>
+        </section>
+    
+        <section class="input-area">
+            <div class="queries">
+                <h1>Billing Address</h1>
+            </div>
+            <div class="flex-queries flex-column">
+                <div class="queries">
+                    <label>City</label> <br>
+                    <input type="text">
+                </div>
+    
+    
+                <div class="queries">
+                    <label>Address</label> <br>
+                    <input type="text">
+                </div>
+    
+    
+                <div class="queries">
+                    <label>Address 2 (optional)</label> <br>
+                    <input type="text">
+                </div>
+
+                <div class="queries">
+                    <label>Postal Code</label> <br>
+                    <input type="text">
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <button id="save">
+        <h1>Save changes</h1>
+    </button>
+
+    <script src="../js-files/account-ISO.js"></script>
+</body>
+</html>

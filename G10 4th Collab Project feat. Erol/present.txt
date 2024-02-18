@@ -1,0 +1,28 @@
+---------------------------------------
+Good Evening Ms. Vivian, We're _____ _____
+
+For our collab project, we've thought of a way to combine Erol's photoshop skills and my web development skills. We've thought of a few ideas and E-commerce was our best option.
+
+Our company's name is T&E™, and this is what it looks like as you log-in to our website.
+
+---------------------------------------
+Our website has 3 pages: one about us, the creators; another for our products; and one more for the users account settings.
+
+If you want to log-out, you may use the button over here or if you go to our accounts page, you will see another log-out button there.
+
+*Erol*
+products, school package, what ms wants.
+
+These are the comment section, for the feedback of our costumers. You just put a comment, then send.
+
+---------------------------------------
+This is the account page. This is where you're going to put your personal and payment information.
+
+*Go through each input*
+Then "Save changes"
+
+You can skip scrolling by pressing the links over here. And you can edit your profile image using this button. 
+
+---------------------------------------
+About Us section
+*Erol*

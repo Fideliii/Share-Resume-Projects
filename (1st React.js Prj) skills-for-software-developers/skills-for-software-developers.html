@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical and Soft skills for software developers</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <nav class='flex-column'>
+        <div id='big-circle'></div>
+        <div id='small-circle'></div>
+        <div class='glass-container flex-column'>
+            <div class='container flex-column'>
+                <button id='cs-btn'>What is Computer Science?</button>
+                <button id='ts-btn'>Technical skills for developers</button>
+                <button id='ss-btn'>Soft skills for developers</button>
+            </div>
+            <button class='arrow flex'><div></div></button>
+        </div>
+    </nav>
+
+    <main class='flex-column' id='main'>
+        <section class='flex-column' id='cs'>
+            <h1>What is Computer Science?</h1>
+            <div class='make-table' data-key='computerScience' data-index='0'></div>
+        </section>
+        <section class='flex-column' id='ts'>
+            <h1>Technical Skills for Software Developers</h1>
+            <div class='make-table' data-key='technicalSkills' data-index='0'></div>
+            <div class='make-table' data-key='technicalSkills' data-index='1'></div>
+            <div class='make-table' data-key='technicalSkills' data-index='2'></div>
+        </section>
+        <section class='flex-column' id='ss'>
+            <h1>Soft Skills for Software Developers</h1>
+            <div class='make-table' data-key='softSkills' data-index='0'></div>
+            <div class='make-table' data-key='softSkills' data-index='1'></div>
+            <div class='make-table' data-key='softSkills' data-index='2'></div>
+        </section>
+    </main>
+
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
