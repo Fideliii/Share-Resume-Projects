@@ -21,7 +21,7 @@ body {
     font-size: var(--text-size);
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, section::-webkit-scrollbar, div::-webkit-scrollbar {
     display: none;
 }
 
